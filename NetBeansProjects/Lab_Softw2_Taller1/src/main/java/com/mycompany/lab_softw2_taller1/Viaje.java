@@ -21,11 +21,11 @@ public abstract class Viaje {
     public abstract String descripcion();
 
     public String cualquierMetodo() {
-        return "Cualquier método implementado en la clase base&quot";
+        return "Cualquier método implementado en la clase base";
     }
 
     public String cualquierMetodo2() {
-        return "Cualquier método2 implementado en la clase base&quot";
+        return "Cualquier método2 implementado en la clase base";
     }
 
     //Constructor

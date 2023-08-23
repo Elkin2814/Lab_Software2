@@ -30,6 +30,6 @@ public class ViajeFamiliar extends Viaje{
 
     @Override
     public String cualquierMetodo2() {
-        return "Método implementado en la clase hija viaje familiar&quot";
+        return "Método implementado en la clase hija viaje familiar";
     }
 }
