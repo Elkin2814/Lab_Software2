@@ -6,6 +6,7 @@ package com.mycompany.lab_softw2_taller1;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -37,10 +38,85 @@ public class ViajeFamiliarTest {
     @After
     public void tearDown() {
     }
+    
+    /*
+    PRUEBAS UNITARIAS DE VIAJE
+    */
+    
+    //TEST PARA VALIDAR LOS GETTERS Y SETTERS
+    
+    //TEST PARA DESTINO
+    @Test
+    public void testGetAndSetDestino(){
+        System.out.println("getOrigen");
+        String destino = "Manizales";
+        Viaje instance = new ViajeFamiliar();
+        instance.setDestino(destino);
+        String result = instance.getDestino();
+        assertEquals(destino, result);
+    }
+    
+    //TEST PARA ORIGEN
+    @Test
+    public void testGetAndSetOrigen(){
+        System.out.println("getOrigen");
+        String origen = "Pasto";
+        Viaje instance = new ViajeFamiliar();
+        instance.setOrigen(origen);
+        String result = instance.getOrigen();
+        assertEquals(origen, result);
+    }
+    
+    //TEST PARA COSTO
+    @Test
+    public void testGetAndSetCosto() {
+        System.out.println("GetAndSetCosto");
+        Viaje instance = new ViajeFamiliar();
+        int costo = 1500000;
+        instance.setCosto(costo);
+        int obtenidoCosto = instance.getCosto();
+        assertEquals(costo, obtenidoCosto);
+    }
+    
+    //TEST PARA VFECHA DE SALIDA
+     @Test
+    public void testGetAndSetFechaSalida() throws ParseException {
+        System.out.println("GetAndSetFechaSalida");
+        Viaje instance = new ViajeFamiliar();
+        Date nuevaFechaSalida = new SimpleDateFormat("dd/MM/yyyy").parse("10/09/2023");
+        instance.setFechaSalida(nuevaFechaSalida);
+        Date viejaFechaSalida = instance.getFechaSalida();
+        assertEquals(nuevaFechaSalida, viejaFechaSalida);
+    }
+    
+    //TEST PARA VFECHA DE LLEGADA
+     @Test
+    public void testGetAndSetFechaLlegada() throws ParseException {
+        System.out.println("GetAndSetFechaLlegada");
+        Viaje instance = new ViajeFamiliar();
+        Date nuevaFechaLlegada = new SimpleDateFormat("dd/MM/yyyy").parse("15/09/2023");
+        instance.setFechaLlegada(nuevaFechaLlegada);
+        Date viejaFechaLlegada = instance.getFechaLlegada();
+        assertEquals(nuevaFechaLlegada, viejaFechaLlegada);
+    }
+    
+    //TEST PARA METODO CUALQUIERMETODO DE CLASE VIAJE
+      @Test
+    public void testCualquierMetodo() {
+        System.out.println("cualquierMetodo");
+        Viaje instance = new ViajeFamiliar();
+        String expResult = "Cualquier método implementado en la clase base";
+        String result = instance.cualquierMetodo();
+        assertEquals(expResult, result);
+    }
+    
+    /*
+    PRUEBAS UNITARIAS DE LA CLASE VIAJEFAMILIAR
+    */
 
-    /**
-     * Test of getFamilia method, of class ViajeFamiliar.
-     */
+    //TEST PARA VALIDAR LOS GETTERS Y SETTERS
+    
+    //TEST PARA GET FAMILIA
     @Test
     public void testGetFamilia() throws ParseException {
         System.out.println("getFamilia");
@@ -52,9 +128,7 @@ public class ViajeFamiliarTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of setFamilia method, of class ViajeFamiliar.
-     */
+    //TEST PARA SET FAMILIA
     @Test
     public void testSetFamilia() throws ParseException {
         System.out.println("setFamilia");
@@ -68,10 +142,8 @@ public class ViajeFamiliarTest {
 
         assertEquals(familia, nuevaFamilia); 
     }
-
-    /**
-     * Test of descripcion method, of class ViajeFamiliar.
-     */
+    
+    //TEST PARA METODO DESCRIPCION
     @Test
     public void testDescripcion() throws ParseException {
         System.out.println("descripcion");
@@ -84,9 +156,7 @@ public class ViajeFamiliarTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of cualquierMetodo2 method, of class ViajeFamiliar.
-     */
+    //TEST PARA METODO CUALQUIERMETODO2
     @Test
     public void testCualquierMetodo2() throws ParseException {
         System.out.println("cualquierMetodo2");

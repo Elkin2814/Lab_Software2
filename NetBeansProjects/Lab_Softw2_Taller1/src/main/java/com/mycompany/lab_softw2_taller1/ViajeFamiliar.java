@@ -10,6 +10,9 @@ public class ViajeFamiliar extends Viaje{
 
     private int familia;
 
+    public ViajeFamiliar() {
+    }
+
     public ViajeFamiliar(int familia, String origen, String destino, int costo, Date fechaSalida, Date fechaLlegada) {
         super(origen, destino, costo, fechaSalida, fechaLlegada);
         this.familia = familia;

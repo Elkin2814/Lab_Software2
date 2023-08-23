@@ -38,9 +38,13 @@ public class ViajeIndividualTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of getEmpresa method, of class ViajeIndividual.
-     */
+    /*
+    PRUEBAS UNITARIAS DE LA CLASE VIAJEINDIVIDUAL
+    */
+
+    //TEST PARA VALIDAR LOS GETTERS Y SETTERS
+    
+    //TEST PARA GET EMPRESA
     @Test
     public void testGetEmpresa() throws ParseException {
         System.out.println("getEmpresa");
@@ -53,9 +57,7 @@ public class ViajeIndividualTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of setEmpresa method, of class ViajeIndividual.
-     */
+    //TEST PARA SET EMPRESA
     @Test
    public void testSetEmpresa() throws ParseException {
         System.out.println("setEmpresa");
@@ -68,9 +70,7 @@ public class ViajeIndividualTest {
         assertEquals(empresa, result);
     }
 
-    /**
-     * Test of descripcion method, of class ViajeIndividual.
-     */
+    //TEST PARA METODO DESCRIPCION
     @Test
     public void testDescripcion() throws ParseException {
         System.out.println("descripcion");
@@ -83,9 +83,7 @@ public class ViajeIndividualTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of cualquierMetodo2 method, of class ViajeIndividual.
-     */
+    //TEST PARA METODO CUALQUIERMETODO2
     @Test
     public void testCualquierMetodo2() throws ParseException {
         System.out.println("cualquierMetodo2");

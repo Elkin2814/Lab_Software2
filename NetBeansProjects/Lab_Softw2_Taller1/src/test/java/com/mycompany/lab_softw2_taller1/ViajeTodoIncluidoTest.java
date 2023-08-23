@@ -38,9 +38,11 @@ public class ViajeTodoIncluidoTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of descripcion method, of class ViajeTodoIncluido.
-     */
+    /*
+    PRUEBAS UNITARIAS DE LA CLASE VIAJETODOINCLUIDO
+    */
+
+    //TEST PARA VALIDAR METODO DESCRIPCION
     @Test
     public void testDescripcion() throws ParseException {
         System.out.println("descripcion");

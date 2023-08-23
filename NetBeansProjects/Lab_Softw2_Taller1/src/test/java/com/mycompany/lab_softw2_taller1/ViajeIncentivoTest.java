@@ -38,9 +38,13 @@ public class ViajeIncentivoTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of getEmpresa method, of class ViajeIncentivo.
-     */
+    /*
+    PRUEBAS UNITARIAS DE LA CLASE VIAJEINCENTIVO
+    */
+
+    //TEST PARA VALIDAR LOS GETTERS Y SETTERS
+    
+    //TEST PARA GET EMPRESA
     @Test
     public void testGetEmpresa() throws ParseException {
         System.out.println("getEmpresa");
@@ -52,9 +56,7 @@ public class ViajeIncentivoTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of setEmpresa method, of class ViajeIncentivo.
-     */
+    //TEST PARA SET EMPRESA
     @Test
     public void testSetEmpresa() throws ParseException {
         System.out.println("setEmpresa");
@@ -67,9 +69,7 @@ public class ViajeIncentivoTest {
         assertEquals(empresa, result);
     }
 
-    /**
-     * Test of descripcion method, of class ViajeIncentivo.
-     */
+    //TEST PARA METODO DESCRIPCION
     @Test
     public void testDescripcion() throws ParseException {
         System.out.println("descripcion");
@@ -82,9 +82,7 @@ public class ViajeIncentivoTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of cualquierMetodo2 method, of class ViajeIncentivo.
-     */
+    //TEST PARA METODO CUALQUIERMETODO2
     @Test
     public void testCualquierMetodo2() throws ParseException {
         System.out.println("cualquierMetodo2");
